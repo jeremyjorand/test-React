@@ -34,7 +34,11 @@ export default function Gallery() {
               setActive(false);
               setDataSearch(
                 dataFilms.filter((dataFilm) => {
-                  return dataFilm.title === search || search === '';
+                  return (
+                    dataFilm.title === search ||
+                    dataFilm.director === search ||
+                    search === ''
+                  );
                 })
               );
             }}

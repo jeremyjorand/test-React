@@ -24,6 +24,8 @@ export default styled.div`
       height: 4rem;
       border-radius: 2rem 0 0 2rem;
       font-size: 1.5rem;
+      border: gray 1px solid;
+      padding-left: 1.5rem;
     }
     button {
       background-color: green;
