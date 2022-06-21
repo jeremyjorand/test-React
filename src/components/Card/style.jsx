@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export default styled.div`
   .contain {
     margin: 3rem 1.5rem;
-    width: 20rem;
+    width: 19rem;
     height: 26rem;
     border: 1px gray solid;
     overflow: auto;
