@@ -33,6 +33,7 @@ export default styled.div`
       width: 8vw;
       border-radius: 0 2rem 2rem 0;
       font-size: 1.5rem;
+      border: gray 1px solid;
     }
   }
   .card {
