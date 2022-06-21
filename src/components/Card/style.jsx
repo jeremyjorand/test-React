@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 
 export default styled.div`
-  display: flex;
-  flex-wrap: wrap;
-
   .contain {
-    margin: 5rem;
-    width: 15vw;
-    height: 20rem;
+    margin: 3rem 1.5rem;
+    width: 20rem;
+    height: 26rem;
     border: 1px black solid;
     overflow: auto;
     img {
