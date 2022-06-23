@@ -35,9 +35,13 @@ export default function Gallery() {
               setDataSearch(
                 dataFilms.filter((dataFilm) => {
                   return (
-                    dataFilm.title === search ||
-                    dataFilm.director === search ||
-                    search === ''
+                    search === '' ||
+                    dataFilm.title
+                      .toLowerCase()
+                      .includes(search.toLowerCase()) ||
+                    dataFilm.director
+                      .toLowerCase()
+                      .includes(search.toLowerCase())
                   );
                 })
               );
@@ -48,13 +52,9 @@ export default function Gallery() {
         </div>
       </div>
       <section className='card'>
-        {dataSearch
-          // .filter((dataFilm) => {
-          //   return dataFilm.title === search || search === '';
-          // })
-          .map((dataFilm) => {
-            return <Card dataFilm={dataFilm} />;
-          })}
+        {dataSearch.map((dataFilm) => {
+          return <Card dataFilm={dataFilm} key={dataFilm.id} />;
+        })}
       </section>
     </SGAllery>
   );
